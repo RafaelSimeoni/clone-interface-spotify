@@ -1,0 +1,518 @@
+
+body{
+    background-image:   url(imagens/capa.png), 
+                        linear-gradient(50deg, #ff4169, #7c26f8);
+    background-attachment: fixed;
+
+    overflow-x: hidden;
+}
+
+/* NAVEGAÇÃO DO TOPO */
+
+header nav{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.nav-padding{
+    padding: 15px 0;
+}
+
+header li{
+    font-size: 1.2em;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+
+header ul li a:hover{
+    color: #9bf0e1 !important;
+}
+
+.icone-sanduiche{
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 1) !important;
+}
+
+.divisor{
+    width: 1px;
+    background: #aaa;
+    margin: 8px 15px;
+}
+
+/* CAPA */
+
+#capa{
+    height: 100%;
+    display: grid;
+    gap: 40px;
+    align-content: center;
+    
+}
+
+#capa h1{
+    font-size: 9em;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+
+}
+.btn01{
+    background-color: #8152F3;
+
+}
+
+.btn01:hover{
+    background-color: #5e2fca;
+
+}
+
+.btn03{
+    grid-column: span 2;
+    justify-self: center;
+    width: 500px;
+}
+.buttons-capa{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 380px 380px;
+    justify-content: center;
+    text-align: center;
+    grid-row: 2;
+}
+
+.buttons-capa button{
+    padding: 6px 40px;
+    font-size: 1.1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.carousel-indicators{
+    position: relative;
+    bottom: -350px;
+}
+
+/* DESTAQUES */
+
+#destaques{
+    background: #fff;
+}
+#destaques>div{
+   
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.destaque-albuns{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.destaque-albuns img{
+    width: 100%;
+}
+
+#destaques h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: #8152F3;
+}
+
+#destaques h3{
+    font-size: 3em;
+    font-weight: 600;
+    color: #8152F3
+}
+
+#destaques p{
+    font-size: 1.4em;
+}
+
+
+/* FACILIDADES */
+
+#facilidades>div{
+   
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+}
+
+#facilidades h2{
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+#facilidades h3{
+    font-size: 3em;
+    font-weight: 600;
+    color: #AEE2E9;
+    margin-bottom: 10px;
+}
+
+#facilidades p{
+    font-size: 1.4em;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.facilidades-imagens{
+    
+    display: flex;
+    justify-content: right;
+    margin-right: -150px;
+    transform: rotate(30deg);
+}
+
+.facilidades-imagens img{
+    width: 300px
+}
+
+/* RODAPÉ */
+
+#rodape{
+    position: relative;
+    background: #000;
+}
+
+#rodape nav{
+    padding: 70px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#rodape h4{
+    color: #919496;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em; 
+}
+
+#rodape ul{
+    padding: 0px;
+}
+
+#rodape li{
+    list-style-type: none;
+}
+
+#rodape a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#rodape a:hover{
+    color: #8152F3;
+}
+
+.rodape-nav-logo img{
+    width: 130px;
+}
+
+.rodape-nav-logo a{
+    padding: 0px;
+    align-self: start;
+}
+
+.rodape-nav-column a{
+        font-size: 16px;
+        display: block;
+        padding: 10px 0px;
+    }
+
+.rodape-nav-icons{
+    justify-self: end;
+}
+.rodape-nav-icons a+a{
+    margin-left: 12px;
+}
+
+.rodape-nav-row {
+    margin-top: 100px;
+    grid-column: 1 / 4;
+
+}
+
+.rodape-nav-row ul{
+    display: flex;
+}
+
+.rodape-nav-row a{
+    display: block;
+    font-size: 12px;
+    color: #919496;
+    padding: 7px 14px;
+}
+
+.rodape-nav-column-2{
+    grid-column: span 2;
+    justify-self: end;
+    margin-top: 100px;
+}
+
+.rodape-nav-column-2 a{
+    color: #919496 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media-query Capa */
+@media(max-width: 575.98px){
+    .buttons-capa{
+        grid-template-columns: 340px;
+    }
+
+    .buttons-capa button + button{
+        grid-row: 2;
+    }    
+}
+
+@media(max-width: 576px){
+    #capa h1{
+        font-size: 4em;
+    }
+
+    .btn03{
+        width: 300px;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.98px){
+    #capa h1{
+        font-size: 5em;
+    }
+
+    .buttons-capa{
+        grid-template-columns: minmax(250px, 280px) minmax(250px, 280px);
+    }
+
+    .buttons-capa button{
+        font-size: 1em;
+    }
+
+    .btn03{
+        width: 330px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991.98px){
+    #capa h1{
+        font-size: 6em;
+    }
+
+    .buttons-capa{
+        grid-template-columns: 300px 300px;
+    }
+
+    .btn03{
+        width: 400px;
+    }
+}
+
+@media(min-width: 992px) and (max-width: 1199.98px){
+    #capa h1{
+        font-size: 7em;
+    }
+
+    .buttons-capa{
+        grid-template-columns: 330px 330px;
+    }
+
+    .btn03{
+        width: 400px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1399.98px){
+    #capa h1{
+        font-size: 8em;
+    }
+    .buttons-capa{
+        grid-template-columns: 350px 350px;
+    }
+
+}
+        
+/* media-query DESTAQUES e FACILIDADES */
+@media(max-width: 575.98px){
+    #destaques>div{
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-albuns{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 2;
+    }
+
+    #destaques h2, #facilidades h2{
+        font-size: 3.1em;
+    }
+
+    #destaques h3, #facilidades h3{
+        font-size: 2.2em;
+    }
+
+    #facilidades>div{
+        grid-template-columns: 1fr;
+    }
+
+    .facilidades-imagens img{
+        display: none;
+    }
+}
+
+@media(min-width: 576px) and (max-width: 767.98px){
+    #destaques h2, #facilidades h2{
+        font-size: 4em;
+    }
+    #destaques h3, #facilidades h3{
+        font-size: 2.6em;
+    }
+    #destaques>div{
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-albuns{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 2;
+    }
+
+    #facilidades>div{
+        grid-template-columns: 1fr;
+    }
+
+    .facilidades-imagens img{
+        display: none;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 991.98px){
+    #destaques>div{
+        grid-template-columns: 1fr;
+    }
+
+    .destaque-albuns{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-row: 2;
+    }
+
+    #facilidades h2{
+        font-size: 3em;
+    }
+
+    #facilidades h3{
+        font-size: 1.8em;
+    }
+    .facilidades-imagens img+img{
+        display: none;    
+    }
+    .facilidades-imagens img{
+        width: 300px;
+        margin-top: -100px;
+    }
+
+    #facilidades>div{
+        grid-template-columns: 2fr 1fr;
+    }
+
+}
+
+@media(min-width: 992px) and (max-width: 1199.98px){
+    #destaques h2, #facilidades h2{
+        font-size: 3.6em;
+    }
+
+    #destaques h3, #facilidades h3{
+        font-size: 2.2em;
+    }
+
+    .facilidades-imagens img{
+        width: 250px;
+    }
+}
+
+@media(min-width: 1200px) and (max-width: 1399.98px){
+    #destaques h2, #facilidades h2{
+        font-size: 4.4em;
+    }
+
+    #destaques h3, #facilidades h3{
+        font-size: 2.6em;
+    }
+
+    .facilidades-imagens img{
+        width: 270px;
+    }
+
+}
+
+/* Media Query RODAPÉ */
+
+@media(min-width: 768px) and (max-width: 1199.98px){
+    #rodape nav{
+        grid-template-columns: 1fr 1fr 1fr 1fr ;
+    }
+
+    .rodape-nav-icons{
+        grid-row: 3;
+        justify-self: start;
+        grid-column: span 2;
+        margin-top: 30px;
+    }
+
+    .rodape-nav-row{
+        margin-top: 75px;
+        grid-row: 4;
+        grid-column: span 3;
+    }
+
+    .rodape-nav-column-2{
+        margin-top: 40px;
+        grid-row: 4;
+
+    }
+}
+
+@media(max-width: 767.98px){
+    #rodape nav{
+        display: block;
+    }
+
+    #rodape nav div{
+        margin-top: 30px;
+        padding: 0px 30px;
+    }
+
+    .rodape-nav-row ul{
+        display: block;
+    }
+}
