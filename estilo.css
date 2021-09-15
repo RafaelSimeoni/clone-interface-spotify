@@ -1,6 +1,6 @@
 
 body{
-    margin-top: 70px;
+    padding-top: 70px;
     background-image:   url(imagens/capa.png), 
                         linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
