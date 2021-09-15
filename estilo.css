@@ -47,11 +47,9 @@ header ul li a:hover{
 /* CAPA */
 
 #capa{
-    border: solid red;
-    height: 100vh;
+    height: 105vh;
     display: grid;
     align-content: center;
-    
 }
 
 #capa h1{
