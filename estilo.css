@@ -47,7 +47,7 @@ header ul li a:hover{
 /* CAPA */
 
 #capa{
-    height: 105vh;
+    height: 100vh;
     display: grid;
     align-content: center;
 }
