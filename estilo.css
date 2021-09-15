@@ -1,5 +1,6 @@
 
 body{
+    margin-top: 70px;
     background-image:   url(imagens/capa.png), 
                         linear-gradient(50deg, #ff4169, #7c26f8);
     background-attachment: fixed;
@@ -46,6 +47,7 @@ header ul li a:hover{
 /* CAPA */
 
 #capa{
+    border: solid red;
     height: 100vh;
     display: grid;
     align-content: center;
